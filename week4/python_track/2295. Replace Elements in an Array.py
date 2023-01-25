@@ -13,6 +13,7 @@ class Solution:
 
             indx = nums_dict[old_value]
             nums[indx] = new_value
+            
             del nums_dict[old_value]
             nums_dict[new_value] = indx
 

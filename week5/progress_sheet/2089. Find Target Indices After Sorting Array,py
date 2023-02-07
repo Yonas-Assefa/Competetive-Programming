@@ -1,0 +1,16 @@
+class Solution:
+    def targetIndices(self, nums: List[int], target: int) -> List[int]:
+        n = len(nums)
+
+        for i in range(n):
+            curMin = i
+            for j in range(i + 1, n):
+                if nums[j] < nums[curMin]:
+                    curMin = j
+            nums[curMin], nums[i] = nums[i], nums[curMin]
+        
+        ans = []
+        for i in range(n):
+            if nums[i] == target:
+                ans.append(i)
+        return ans

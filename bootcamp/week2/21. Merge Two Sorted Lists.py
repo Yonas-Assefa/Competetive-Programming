@@ -55,7 +55,7 @@ class Solution:
             print(ans, ansP,"round")
             if list1.val < list2.val:
                 ans.next = list1
-                ans = ans.
+                # ans = ans.
                 helper(list1.next, list2, ans, ansP)
 
             else:

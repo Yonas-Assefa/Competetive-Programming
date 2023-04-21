@@ -40,4 +40,4 @@ class Solution:
 
         return curPointer.next
         
-        
+            

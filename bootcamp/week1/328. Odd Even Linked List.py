@@ -10,6 +10,7 @@ class Solution:
         
         odd = ListNode(None)
         even = ListNode(None)
+        
         oddHead = odd
         evenHead = even
 

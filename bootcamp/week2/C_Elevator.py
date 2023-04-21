@@ -12,6 +12,7 @@ for _ in range(test):
         def minTime(elvFlr, redFlr,minT):
             if redFlr > elvFlr:
                 return minT
+            
             redWalk = elvFlr - redFlr
             time = (redWalk * wt) + ((elvFlr - redWalk) * et) + ((4 - redWalk) * et)
             minT = min(minT, time)

@@ -29,22 +29,4 @@ class Solution:
             return (self.isValidBST(root.left) and self.isValidBST(root.right))
         else:
             return False
-        # if not root:
-        #     return True
-        # elif not root.left and root.right:
-        #     if root.val < root.right.val:
-        #         return self.isValidBST(root.right)
-        #     else:
-        #         return False
-        # elif not root.right and root.left:
-        #     if root.val > root.left.val:
-        #         return self.isValidBST(root.left)
-        #     else:
-        #         return False
-        # elif not root.left and not root.right:
-        #     return True
-
-        # if ((root.val > root.left.val) and (root.val < root.right.val)):
-        #     return (self.isValidBST(root.left) and self.isValidBST(root.right))
-        # else:
-        #     return False
+ 
